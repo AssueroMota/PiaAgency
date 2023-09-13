@@ -1,0 +1,233 @@
+.contact {
+    margin: auto;
+    width: $max-width-lg;
+    padding-top: 64px;
+
+    .contact__main-title {
+        .contact__title {
+            font-family: $fontPrimary;
+            font-style: normal;
+            font-weight: $weight-5;
+            font-size: 42px;
+            line-height: 100%;
+            text-align: center;
+            color: $primary;
+        }
+
+        .contact__description {
+            font-family: $fontPrimary;
+            font-style: normal;
+            font-weight: $weight-2;
+            font-size: $size-5;
+            line-height: 150%;
+            text-align: center;
+            color: $secondary;
+            margin-bottom: 64px;
+        }
+    }
+
+    .contact__form {
+        @media (min-width: $tablet) {
+            margin: auto;
+            width: 50vw;
+            margin-bottom: 128px;
+        }
+
+        button {
+            border: none;
+            // background: linear-gradient(247.59deg, #A90722 14.94%, #EF0D33 85.74%);
+            background: -webkit-linear-gradient(247.59deg, #a90722 14.94%, #ef0d33 85.74%);
+            background: -moz-linear-gradient(247.59deg, #a90722 14.94%, #ef0d33 85.74%);
+            background: -o-linear-gradient(247.59deg, #a90722 14.94%, #ef0d33 85.74%);
+            background: linear-gradient(247.59deg, #a90722 14.94%, #ef0d33 85.74%);
+            -webkit-transition: background 0.35s ease-out;
+            -moz-transition: background 0.35ss ease-out;
+            -o-transition: background 0.35s ease-out;
+            transition: background 0.35s ease-out;
+            border-radius: 8px;
+            padding: 20px 25px;
+            font-family: $fontPrimary;
+            font-style: normal;
+            font-weight: $weight-4;
+            font-size: 1rem;
+            line-height: 100%;
+            display: flex;
+            align-items: center;
+            margin-top: 50px;
+            margin: auto;
+            width: 22.6%;
+            white-space: nowrap;
+            margin-top: 32px;
+            color: $white;
+            cursor: pointer;
+            @media (max-width: 540px) {
+                font-size: 0.73rem;
+                padding: 20px 64px;
+            }
+            &:hover {
+                background-position: -13.5em;
+                @media (max-width: 1444px) {
+                    background-position: -9.5em;
+                }
+            }
+        }
+
+        .contact__form-control {
+            label {
+                font-family: $fontPrimary;
+                font-style: normal;
+                font-weight: $weight-2;
+                font-size: $size-5;
+                line-height: 150%;
+                color: $secondary;
+            }
+
+            input {
+                border: solid 1px #f7f7f7;
+                background: #f7f7f7;
+                border-radius: 10px;
+                padding: 20px;
+                outline: none;
+                font-family: $primary;
+                font-style: normal;
+                font-weight: $weight-2;
+                font-size: 14px;
+                line-height: 100%;
+                width: 100%;
+                margin-bottom: 32px;
+                margin-top: 5px;
+
+                @media (max-width: $tablet) {
+                    box-sizing: border-box;
+                    padding: 20px 15px;
+                }
+            }
+
+            textarea {
+                border: solid 1px #f7f7f7;
+                background: #f7f7f7;
+                border-radius: 10px;
+                padding: 20px;
+                outline: none;
+                font-family: $primary;
+                font-style: normal;
+                font-weight: $weight-2;
+                font-size: 14px;
+                line-height: 100%;
+                width: 100%;
+                resize: none;
+                margin-top: 8px;
+
+                @media (max-width: $tablet) {
+                    box-sizing: border-box;
+                    padding: 20px 15px;
+                }
+            }
+        }
+    }
+}
+
+.form_contact-message {
+    position: fixed;
+    right: 20px;
+    bottom: 140px;
+    background-color: #27ae60;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+
+    .contents {
+        padding: 20px;
+        display: flex;
+        column-gap: 10px;
+        align-items: center;
+    }
+
+    .progress {
+        height: 5px;
+        background-color: $white;
+        width: 300px;
+        .progress-message {
+            background-color: #0e5e2f;
+            width: 0%;
+            animation: progressBar 3s linear forwards;
+            height: 5px;
+        }
+    }
+
+    .form_contact-message-title {
+        color: $white;
+        font-family: $fontPrimary;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: $weight-3;
+        line-height: 100%;
+        margin: 0;
+        margin-bottom: 4px;
+    }
+
+    .form_contact-messge-description {
+        margin: 0;
+        color: $white;
+        font-family: $fontPrimary;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        letter-spacing: 0.96px;
+    }
+}
+.form_contact-message-error {
+    position: fixed;
+    right: 20px;
+    bottom: 140px;
+    background-color: #ff0000;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+
+    .contents-error {
+        padding: 20px;
+        display: flex;
+        column-gap: 10px;
+        align-items: center;
+    }
+
+    .progress-error {
+        height: 5px;
+        background-color: $white;
+        width: 300px;
+        .progress-message-error {
+            background-color: #490000;
+            width: 0%;
+            animation: progressBar 3s linear forwards;
+            height: 5px;
+        }
+    }
+
+    .form_contact-message-title-error {
+        color: $white;
+        font-family: $fontPrimary;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: $weight-3;
+        line-height: 100%;
+        margin: 0;
+        margin-bottom: 4px;
+    }
+
+    .form_contact-messge-description-error {
+        margin: 0;
+        color: $white;
+        font-family: $fontPrimary;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        letter-spacing: 0.96px;
+    }
+}
+
+@keyframes progressBar {
+    100% {
+        width: 100%;
+    }
+}

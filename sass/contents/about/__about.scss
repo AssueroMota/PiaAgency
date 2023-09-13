@@ -1,0 +1,335 @@
+.banner__about {
+    width: $max-width-lg;
+    margin: auto;
+
+    .banner__about-row-1 {
+        padding-top: 180px;
+        display: flex;
+        flex-direction: column-reverse;
+
+        @media (min-width: $tablet) {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: end;
+            margin: auto;
+            width: $max-width-s;
+        }
+
+        .banner__about-title {
+            font-family: $fontPrimary;
+            font-style: normal;
+            font-weight: $weight-5;
+            font-size: 8vw;
+            line-height: 100%;
+            color: $primary;
+            text-align: center;
+            margin-top: 0;
+            @media (min-width: $tablet) {
+                margin-bottom: 0;
+                text-align: left;
+                font-size: 7.8rem;
+            }
+            @media (max-width:$tablet) {
+                font-size: 3rem;
+            }
+        }
+
+        .banner__about-text-muted-styled {
+            font-family: $fontPrimary;
+            font-style: normal;
+            font-weight: $weight-5;
+            font-size: 8vw;
+            color: $tertiary !important;
+            line-height: 100%;
+            background: linear-gradient(244.17deg, #a90722 14.95%, #ef0d33 85.31%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-align: center;
+            white-space: nowrap;
+            @media (min-width: $tablet) {
+                font-size: 7.8rem;
+            }
+        }
+
+        .banner__about-text-muter {
+            font-family: $fontPrimary;
+            font-style: normal;
+            font-weight: $weight-1;
+            font-size: $size-8;
+            line-height: 100%;
+            text-align: center;
+            color: $secondary;
+            @media (min-width: $tablet) {
+                margin-bottom: 14px;
+            }
+        }
+    }
+
+    .banner__about-row-2 {
+        @media (max-width: $tablet) {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        @media (min-width: $tablet) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            column-gap: 40px;
+            margin: auto;
+            width: $max-width-s;
+            margin-top: 128px;
+            padding-bottom: 128px;
+        }
+
+        .banner__about-row-2-container {
+            .banner__about-row-2-content-1 {
+                h4 {
+                    font-family: $fontPrimary;
+                    font-style: normal;
+                    font-weight: $weight-5;
+                    font-size: 36px;
+                    line-height: 150%;
+                    color: $primary;
+                    margin-top: 0;
+                    margin-bottom: 10px;
+                    @media (max-width:$tablet) {
+                        margin-top: 1rem;
+                        font-size: 2rem;
+                    }
+                }
+
+                p {
+                    font-family: $fontPrimary;
+                    font-style: normal;
+                    font-weight: $weight-2;
+                    font-size: $size-6;
+                    line-height: 150%;
+                    color: $secondary;
+                }
+            }
+
+            .banner__about-row-2-content-2 {
+                h5 {
+                    font-family: $fontPrimary;
+                    font-style: normal;
+                    font-weight: $weight-4;
+                    font-size: $size-8;
+                    line-height: 150%;
+                    color: $primary;
+                    margin-top: 20px;
+                    margin-bottom: 0;
+                }
+
+                p {
+                    font-family: $fontPrimary;
+                    font-style: normal;
+                    font-weight: $weight-2;
+                    font-size: $size-5;
+                    line-height: 150%;
+                    color: $secondary;
+                }
+
+                .banner__about-row-2-content-2-styled {
+                    color: $tertiary;
+                    font-weight: $weight-5;
+                }
+            }
+
+            .banner__about-row-2-content-3 {
+                h5 {
+                    font-family: $fontPrimary;
+                    font-style: normal;
+                    font-weight: $weight-4;
+                    font-size: $size-8;
+                    line-height: 150%;
+                    color: $primary;
+                    margin-top: 20px;
+                    margin-bottom: 0;
+                }
+
+                p {
+                    font-family: $fontPrimary;
+                    font-style: normal;
+                    font-weight: $weight-2;
+                    font-size: $size-6;
+                    line-height: 150%;
+                    color: $secondary;
+                }
+
+                .banner__about-row-2-content-3-styled {
+                    color: $tertiary;
+                    font-weight: $weight-5;
+                }
+            }
+        }
+
+        .banner__about-row-2-image {
+          
+            @media (min-width: 1000px) and (max-width: 1100px) {
+                width: 140%;
+                height: 100%;
+            }
+
+            img {
+                width: 100%;
+                filter: grayscale(1);
+                border-radius: 20px;
+                transition: all 0.3s ease-in-out;
+                cursor: pointer;
+                
+                @media (min-width: 1000px) and (max-width: 1100px) {
+                    margin-top: 4rem;
+                    height: 70%;
+                }
+                @media (max-width: 768px) {
+                    filter: grayscale(0);
+                }
+                &:hover {
+                    transform: scale(1.01);
+                    filter: grayscale(0);
+                    border: 1px solid #000000;
+                }
+            }
+        }
+    }
+}
+
+// FotoRicardoInTimeSqare
+
+.banner__about-row-3 {
+
+    
+    @media (max-width: $tablet) {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    @media (min-width: $tablet) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        column-gap: 40px;
+        margin: auto;
+        width: $max-width-s;
+        margin-top: 8rem;
+        padding-bottom: 128px;
+    }
+
+    .banner__about-row-3-container {
+        .banner__about-row-3-content-1 {
+            h4 {
+                font-family: $fontPrimary;
+                font-style: normal;
+                font-weight: $weight-5;
+                font-size: 36px;
+                line-height: 150%;
+                color: $primary;
+                margin-top: 0;
+                margin-bottom: 10px;
+                @media (max-width:$tablet) {
+                    font-size: 2rem;
+                }
+            }
+
+            p {
+                font-family: $fontPrimary;
+                font-style: normal;
+                font-weight: $weight-2;
+                font-size: $size-6;
+                line-height: 150%;
+                color: $secondary;
+            }
+        }
+
+        .banner__about-row-3-content-2 {
+            h5 {
+                font-family: $fontPrimary;
+                font-style: normal;
+                font-weight: $weight-4;
+                font-size: $size-8;
+                line-height: 150%;
+                color: $primary;
+                margin-top: 20px;
+                margin-bottom: 0;
+            }
+
+            p {
+                font-family: $fontPrimary;
+                font-style: normal;
+                font-weight: $weight-2;
+                font-size: $size-5;
+                line-height: 150%;
+                color: $secondary;
+            }
+
+            .banner__about-row-3-content-2-styled {
+                color: $tertiary;
+                font-weight: $weight-5;
+            }
+        }
+
+        .banner__about-row-3-content-3 {
+            h5 {
+                font-family: $fontPrimary;
+                font-style: normal;
+                font-weight: $weight-4;
+                font-size: $size-8;
+                line-height: 150%;
+                color: $primary;
+                margin-top: 20px;
+                margin-bottom: 0;
+            }
+
+            p {
+                font-family: $fontPrimary;
+                font-style: normal;
+                font-weight: $weight-2;
+                font-size: $size-5;
+                line-height: 150%;
+                color: $secondary;
+            }
+
+            .banner__about-row-3-content-3-styled {
+                color: $tertiary;
+                font-weight: $weight-5;
+            }
+        }
+    }
+
+    .banner__about-row-3-image {
+        margin: auto;
+        text-align: center;
+
+        img {
+            text-align: center;
+            width: 65%;
+            object-fit: fill;
+            filter: grayscale(1);
+            border-radius: 20px;
+            transition: all 0.3s ease-in-out;
+            cursor: pointer;
+            @media (max-width: 768px) {
+                filter: grayscale(0);
+            }
+            @media (max-width: $tablet) {
+                margin-top: 2rem;
+                margin-bottom: -4rem;
+            }
+            @media (min-width: 1000px) and (max-width: 1100px) {
+                width: 100%;
+                object-fit: fill;
+            }
+            &:hover {
+                filter: grayscale(0);
+                transform: scale(1.01);
+                border: 1px solid #000000;
+            }
+        }
+    }
+}
+
+[data-rmiz-modal-content] {
+    background-color: #101820;
+}
